@@ -7,8 +7,7 @@ import numpy as np
 import yahoo_fin.stock_info as si
 import datetime
 # Define the stock symbol and time period
-symbol = str(
-    input("Please enter a stock symbol to get a price prediction(e.g AAPL):"))
+symbol = str(input("Please enter a stock symbol to get a price prediction(e.g AAPL):"))
 # starting date
 stock_data = si.get_data(symbol)
 start_date = stock_data.index.min()
